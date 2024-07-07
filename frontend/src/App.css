@@ -1,0 +1,305 @@
+* {
+    /* font-family: "akkurat-regular" */
+}
+
+.view::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px red;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.view:hover:after {
+    transform: scaleX(1)
+}
+
+.edit-profile:hover {
+    background-color: rgb(57, 56, 56);
+}
+
+.profile-link {
+    cursor: pointer
+}
+
+.write-icon {
+    border: 1px solid white;
+}
+
+.write-icon:hover {
+    background-color: rgba(47, 45, 45, 0.715);
+}
+
+.nav-container {
+    display: flex;
+}
+
+@media screen and (min-width: 601px) {
+    .nav-menu {
+        display: none !important
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .show-user-options {
+        display: none !important
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .breakpoint-xsm {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .nav-title {
+        flex-basis: 100% !important;
+        text-align: center !important;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .nav-search {
+        margin-left: 10px;
+    }
+
+    .nav-menu {
+        flex-basis: 20px !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .nav-menu-options {
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .nav-menu-options {
+        top: 80px;
+    }
+}
+
+.home-posts {
+    box-shadow: 2px 2px 2px grey;
+}
+
+.home-posts:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+
+.home-posts-desc {
+    font-size: 13px;
+    margin-bottom: 3px;
+    font-family: Roboto;
+}
+
+.post-view-stats {
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.view-profile-blogs {
+    display: flex;
+}
+
+.view-profile-main {
+    background-color: #bcb9b9;
+}
+
+.user-bio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+}
+
+.username-txt {
+    font-size: 50px;
+    font-weight: 650;
+}
+
+.tab-shrink-right:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform-origin: 44px;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.tab-shrink-left:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform-origin: 0px;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.tab-grow-right:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform-origin: 0px;
+    transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
+}
+
+.tab-grow-left:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px black;
+    transform-origin: 44px;
+    transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
+}
+
+.profile-edit-modal {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.post-cover img {
+    height: 250px;
+    width: 300px;
+}
+
+.btn-fav:hover {
+    filter: drop-shadow(0.5px 0.5px 0.5px red);
+    cursor: pointer;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container,
+.blog-cats-container,
+.cats,
+.create-title,
+.create-desc {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+input::file-selector-button {
+    color: black;
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+#scroll-to-top {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: fixed;
+    right: 8px;
+    top: 80%;
+    z-index: 99;
+}
+
+#scroll-to-top:hover {
+    border-color: rgb(7, 99, 135);
+    fill: rgb(7, 99, 135);
+}
+
+.inpost-bookmark {
+    position: fixed;
+    right: 12px;
+    top: 88%;
+    z-index: 99;
+    font-size: 30px;
+}
+
+/**------------------------------------------------------------------------------------------------/
+/*ABOUT US PAGE DESIGN*/
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #333;
+} */
+
+.about-us-h1 {
+    font-size: 1.5vmax;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.about-us-h2 {
+    font-size: 1.4vmax;
+    font-weight: 200;
+}
+
+.about-us-top {
+    background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 0px;
+}
+
+.about-us-box {
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-us-title {
+    color: #000;
+    font-family: 'Verdana', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us-subtitle {
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+}
+
+.about-us-text {
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.icon {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 36px;
+}
+
+.mission-box {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.community-box {
+    background-color: #000;
+    color: #fff;
+}
+
+.apart-box {
+    box-shadow:  0 16px 6px -6px rgb(187, 190, 190);
+}
